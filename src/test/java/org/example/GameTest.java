@@ -1,4 +1,5 @@
 package org.example;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +8,7 @@ class GameTest {
     @Test
     public void firstPlayerWin() {
         Player anna = new Player(1, "Anna", 500);
-        Player sonya = new Player (2, "Sonya", 1000);
+        Player sonya = new Player(2, "Sonya", 1000);
         Game game = new Game();
 
         game.register(anna);
@@ -21,7 +22,7 @@ class GameTest {
     @Test
     public void secondPlayerWin() {
         Player anna = new Player(1, "Sonya", 5000);
-        Player sonya = new Player (2, "Anna", 1000);
+        Player sonya = new Player(2, "Anna", 1000);
         Game game = new Game();
 
         game.register(anna);
@@ -35,7 +36,7 @@ class GameTest {
     @Test
     public void equallyWin() {
         Player anna = new Player(1, "Sonya", 5000);
-        Player sonya = new Player (2, "Anna", 5000);
+        Player sonya = new Player(2, "Anna", 5000);
         Game game = new Game();
 
         game.register(anna);
@@ -49,7 +50,7 @@ class GameTest {
     @Test
     public void firstPlayerNotExist() {
         Player anna = new Player(1, "Sonya", 5000);
-        Player sonya = new Player (2, "Anna", 5000);
+        Player sonya = new Player(2, "Anna", 5000);
         Game game = new Game();
 
         game.register(anna);
@@ -62,7 +63,7 @@ class GameTest {
     @Test
     public void secondPlayerNotExist() {
         Player anna = new Player(1, "Sonya", 5000);
-        Player sonya = new Player (2, "Anna", 5000);
+        Player sonya = new Player(2, "Anna", 5000);
         Game game = new Game();
 
         game.register(anna);
